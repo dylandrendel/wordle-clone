@@ -1,0 +1,29 @@
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 8px 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: none;
+  font-weight: 600;
+  font-size: 20px;
+  &.green {
+    border: 1px solid green;
+    background-color: rgba(green, .3);
+    transition: background-color 2s;
+  }
+  &.yellow {
+    border: 1px solid orange;
+    background-color: rgba(orange, .3);
+    transition: background-color 2s;
+  }
+  &.gray {
+    border: 1px solid gray;
+    background-color: rgba(gray, .3);
+    transition: background-color 2s;
+  }
+}

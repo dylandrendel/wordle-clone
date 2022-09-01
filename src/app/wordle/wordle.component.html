@@ -1,0 +1,11 @@
+<div class="header mat-typography">
+  <div>Wordle</div>
+</div>
+<div class="full-screen-container">
+  <app-guess-row *ngFor="let guess of guesses; index as i" [guess]="guess" [highlights]="highlights[i]"></app-guess-row>
+  <div *ngIf="solved || failed" class="container mat-typography">
+    <h3 *ngIf="solved">Nice wordling!</h3>
+    <h3 *ngIf="failed">The answer was <b>{{solution}}</b></h3>
+    <button mat-raised-button color="primary" (click)="reset()">Reset</button>
+  </div>
+</div>
