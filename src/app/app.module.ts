@@ -9,7 +9,7 @@ import { GuessRowComponent } from './guess-row/guess-row.component';
 import { TileComponent } from './tile/tile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 
 @NgModule({
   declarations: [
