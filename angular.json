@@ -118,8 +118,9 @@
       }
     }
   },
-  "defaultProject": "wordle-clone",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
