@@ -105,9 +105,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "wordle-clone"
+  "defaultProject": "wordle-clone",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

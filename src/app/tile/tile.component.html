@@ -1,5 +1,6 @@
 <div
-  class="tile mat-elevation-z2"
+  class="tile"
+  [class.active-row]="isInCurrentRow"
   [class.green]="highlight === 'green'"
   [class.yellow]="highlight === 'yellow'"
   [class.gray]="highlight === 'gray'"

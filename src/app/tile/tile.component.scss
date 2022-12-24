@@ -1,3 +1,5 @@
+@use "@angular/material" as mat;
+
 .tile {
   width: 60px;
   height: 60px;
@@ -11,19 +13,25 @@
   background-color: none;
   font-weight: 600;
   font-size: 20px;
+
+  @include mat.elevation-transition();
+  @include mat.elevation(2);
+  &.active-row {
+    @include mat.elevation(8);
+  }
   &.green {
     border: 1px solid green;
-    background-color: rgba(green, .3);
+    background-color: rgba(green, 0.3);
     transition: background-color 2s;
   }
   &.yellow {
     border: 1px solid orange;
-    background-color: rgba(orange, .3);
+    background-color: rgba(orange, 0.3);
     transition: background-color 2s;
   }
   &.gray {
     border: 1px solid gray;
-    background-color: rgba(gray, .3);
+    background-color: rgba(gray, 0.3);
     transition: background-color 2s;
   }
 }

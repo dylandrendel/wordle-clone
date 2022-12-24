@@ -38,11 +38,8 @@ export class WordleComponent implements OnInit {
       return;
     }
 
-    if (
-      event.key === 'Enter' &&
-      currWord.length === 5
-    ) {
-      if (!this.checkWordList.some(w => w === currWord)) {
+    if (event.key === 'Enter' && currWord.length === 5) {
+      if (!this.checkWordList.some((w) => w === currWord)) {
         alert('Not a valid word');
         return;
       }
@@ -108,5 +105,5 @@ export class WordleComponent implements OnInit {
     this.highlights = Array.from({ length: 6 }, () =>
       Array<Highlight>(5).fill('none')
     );
-  }
+  };
 }

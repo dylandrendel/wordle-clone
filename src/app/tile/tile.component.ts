@@ -1,19 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Highlight } from '../wordle/wordle.component';
 
 @Component({
   selector: 'app-tile',
   templateUrl: './tile.component.html',
-  styleUrls: ['./tile.component.scss']
+  styleUrls: ['./tile.component.scss'],
 })
-export class TileComponent implements OnInit {
-
+export class TileComponent {
   @Input() letter = '';
   @Input() highlight: Highlight = 'none';
+  @Input() isInCurrentRow: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
 }

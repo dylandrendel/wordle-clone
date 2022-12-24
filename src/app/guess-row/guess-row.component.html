@@ -1,3 +1,8 @@
 <div class="row">
-  <app-tile *ngFor="let tile of tiles; index as i" [letter]="letters[i]" [highlight]="highlights[i]"></app-tile>
+  <app-tile
+    *ngFor="let tile of tiles; index as i"
+    [letter]="letters[i]"
+    [highlight]="highlights[i]"
+    [isInCurrentRow]="isCurrentRow"
+  ></app-tile>
 </div>
